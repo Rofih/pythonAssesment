@@ -16,7 +16,7 @@ display the average
 
 value1=int(input("Enter the first number: "))
 value2=int(input("Enter the second number: "))
-value3=int(input("Enter the second number: "))
+value3=int(input("Enter the third number: "))
 sum=value1+value2+value3
 average=sum/3
 print(average)
