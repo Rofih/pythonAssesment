@@ -23,17 +23,17 @@ def nokia():
             print("phonebook")
             def phonebook():
                 menu = """
-                1. Search
+                1.Search
                 2.Service Nos
-                3. Add Name
-                4. Erase
+                3.Add Name
+                4.Erase
                 5.Edit
                 6.Assign Tone
-                7. Send b'card
+                7.Send b'card
                 8.Options
-                9. Speed DIals
-                10. Voice Tags
-                11. Go Back
+                9.Speed DIals
+                10.Voice Tags
+                11.Go Back
                 """
                 print(menu)
                 input = int(input("Choose: "))
@@ -76,17 +76,17 @@ def nokia():
             print("Messages")
             def messages():
                 Messages = """
-                1. Write Messages
-                2. Inbox
-                3. Outbox
+                1.Write Messages
+                2.Inbox
+                3.Outbox
                 4.Picture
                 5.Template
-                6. Smileys
-                7. Message Settings
-                8. Info Service
-                9. Voice Mailbox Number
-                10. Service Command editor
-                0.  Back
+                6.Smileys
+                7.Message Settings
+                8.Info Service
+                9.Voice Mailbox Number
+                10.Service Command editor
+                0.Back
                 """
                 print(Messages)
                 inbox = int(input("Choose: "))
@@ -101,9 +101,9 @@ def nokia():
                         print("Message Settings")
                         def message_settings():
                             Message_settings = """
-                            1. Set
+                            1.Set
                             2.Common
-                            0. Back
+                            0.Back
                             """
                             print(option)
                             option = int(input("enter a option: "))
@@ -157,7 +157,7 @@ def nokia():
             messages()
         case 3: print("Chat")
         case 4:
-            print("Call Register")
+            print("call_register")
             call_register = """
             1. Missed calls
             2. Received calls
@@ -195,7 +195,7 @@ def nokia():
                     call_duration()
                 case 6:
                     print("Show call costs")
-                    def call_costs():
+                    def call_cost():
                         call_cost = """
                         1.Last call cost
                         2. All calls’ cost
@@ -206,10 +206,10 @@ def nokia():
                         if cost == 1: print("Last call cost")
                         elif cost == 2: print("All calls’ cost")
                         else: print("Clear Counter")
-                    call_costs()
+                    call_cost()
                 case 7:
                     print("Call cost")
-                    def call_costs():
+                    def call_cost():
                         cost_settings = """
                         1. Call cost limit
                         2. Show costs in
@@ -218,7 +218,7 @@ def nokia():
                         call_cost = int(input("enter a option: "))
                         if call_cost == 1: print("Call cost limit")
                         else: print("Show costs in")
-                    call_costs()
+                    call_cost()
                 case 8: print("Prepaid credit")
         case 5:
             print("Tone")
@@ -248,7 +248,7 @@ def nokia():
 
         case 6:
             print("Settings")
-            def settings():
+            def setting():
                 setting = """
                 1. Call settings
                 2.Phone settings
@@ -260,8 +260,8 @@ def nokia():
                 match setting:
                     case 1:
                         print("Call Settings")
-                        def calls():
-                            calls = """
+                        def call():
+                            call = """
                             1. Automatic redial
                             2. Speed dialling
                             3. Call waiting options
@@ -270,7 +270,7 @@ def nokia():
                             6. Automatic answer
                             """
                             print(call)
-                            call = int(input("Enter: "))
+                            call = int(input("Enter a option: "))
                             match call:
                                 case 1: print("Auto Redial")
                                 case 2: print("Speed dialling")
@@ -278,10 +278,10 @@ def nokia():
                                 case 4: print("Own number sending")
                                 case 5: print("Phone line in use")
                                 case 6: print("Automatic answer")
-                        call_settings()
+                        call_setting()
                     case 2:
                         print("Phone Settings")
-                        def phone_settings():
+                        def phone_setting():
                             phone = """
                             1. Language
                             2. Cell info display
@@ -299,11 +299,11 @@ def nokia():
                                 case 4: print("Network selection")
                                 case 5: print("Lights ")
                                 case 6: print("Confirm SIM service actions")
-                        phone_settings()
+                        phone_setting()
                     case 3:
                         print("Security Settings")
-                        def securitys():
-                            securitys = """
+                        def security():
+                            security = """
                             1. PIN code request
                             2. Call barring service
                             3. Fixed dialling
@@ -312,8 +312,8 @@ def nokia():
                             6. Change access codes
                             """
                             print(security_seetings_menu)
-                            securities = int(input("Enter: "))
-                            match securities:
+                            securitiesetting = int(input("Enter: "))
+                            match securitiesetting:
                                 case 1: print("PIN code request")
                                 case 2: print("Call barring service")
                                 case 3: print("Fixed dialling")
@@ -338,8 +338,8 @@ def nokia():
                 5. Countdown timer
                 6. Auto update of date and time
                 """
-                print(clocks)
-                input = int(input("Choose: "))
+                print(clock)
+                input = int(input("enter a option: "))
                 match input:
                     case 1: print("Alarm clock")
                     case 2: print("Clock settings")
