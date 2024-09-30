@@ -5,14 +5,14 @@ generate another random number then store
 sum the the generated random numbers
 '''
 import random
-user_input=int(input("enter the sum of the random generated numbers:"))
+user_input = int(input("enter the sum of the random generated numbers:"))
 
-number=random.randrange(100)
-number2=random.randrange(100)
+number = random.randrange(100)
+number2 = random.randrange(100)
 
-add=number+number2
+add = number+number2
 
-if user_input==add:
+if user_input == add:
 	print("true")
 else:
 	print("false")
