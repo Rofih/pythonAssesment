@@ -1,3 +1,8 @@
+'''
+confirm each digit is even
+from range 1000 to 3000
+'''
+
 value1=0
 value2=0
 value3=0

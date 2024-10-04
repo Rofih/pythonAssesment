@@ -1,3 +1,8 @@
+'''
+when number is inputed break it down to digits
+then reverse
+use the reverse and confirm with the number 
+'''
 def reverse(number):
 	reverse = 0
 	add = 0
